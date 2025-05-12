@@ -1,0 +1,192 @@
+
+
+### 1. *Login Page (Fig. 7.1)*
+
+html
+<!-- login.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+            text-align: center;
+            padding-top: 100px;
+            font-family: Arial;
+        }
+        .login-box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px;
+            margin: auto;
+        }
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h2>AVALURPET BRANCH</h2>
+        <p>JAI GROUPS</p>
+        <form action="home.html">
+            <input type="text" placeholder="Enter Username" required><br>
+            <input type="password" placeholder="Enter Password" required><br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+---
+
+### 2. *Home Page (Fig. 7.2)*
+
+html
+<!-- home.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            font-family: Arial;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #111;
+            color: white;
+            height: 100vh;
+            padding: 15px;
+        }
+        .main {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .module {
+            display: inline-block;
+            width: 120px;
+            margin: 10px;
+            padding: 10px;
+            background: #f2f2f2;
+            text-align: center;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h3>Dashboard</h3>
+        <ul>
+            <li>Masters</li>
+            <li>Purchase</li>
+            <li>Sales</li>
+        </ul>
+    </div>
+    <div class="main">
+        <h2>Welcome to JAI POWER SYSTEMS</h2>
+        <div class="module">Sales Entry</div>
+        <div class="module">Customer Report</div>
+        <div class="module">Claim Pending</div>
+        <!-- Add more modules as needed -->
+    </div>
+</body>
+</html>
+
+
+---
+
+### 3. *Category Name List (Fig. 7.3)*
+
+html
+<!-- category.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Category List</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <h2>Category Master</h2>
+    <form>
+        <input type="text" placeholder="Enter Category Name">
+        <button type="submit">Save</button>
+    </form>
+    <table>
+        <tr><th>No</th><th>Category Name</th></tr>
+        <tr><td>1</td><td>Amaron</td></tr>
+        <tr><td>2</td><td>Exide</td></tr>
+        <tr><td>3</td><td>Power Zone</td></tr>
+        <!-- Add more as needed -->
+    </table>
+</body>
+</html>
+
+
+---
+
+### 4. *Sales Report (Fig. 7.4)*
+
+html
+<!-- sales_report.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sales Report</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Sales Report</h2>
+    <form style="text-align: center;">
+        <input type="text" placeholder="Customer Name">
+        <input type="date">
+        <input type="date">
+        <input type="text" placeholder="Mobile Number">
+        <button type="submit">Search</button>
+    </form>
+    <table>
+        <tr>
+            <th>Sr. No</th><th>Invoice No</th><th>Customer Name</th><th>Amount</th><th>Total</th>
+        </tr>
+        <tr><td>1</td><td>INV001</td><td>John</td><td>1000</td><td>1000</td></tr>
+    </table>
+</body>
+</html>
+
